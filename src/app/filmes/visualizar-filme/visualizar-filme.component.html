@@ -5,6 +5,12 @@
     <mat-list-item>Descrição: {{ filme.descricao }}</mat-list-item>
     <mat-list-item>Nota: <a [href]="filme.urlIMDb" target="_blank"> {{ filme.nota }}</a></mat-list-item>
     <img class="mat-card-image" mat-card-image [src]="filme.urlFoto || semFoto">
+    <mat-card class="mat-card">
+        <mat-card-actions>
+            <button color="accent" mat-raised-button>Editar</button>
+            <button color="warn" mat-raised-button (click)="excluir()">Excluir</button>
+        </mat-card-actions>
+    </mat-card>
 </mat-list>
 
 <ng-template #semRegistro>
