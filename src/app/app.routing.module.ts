@@ -4,9 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { FilmesModule } from './filmes/filmes.module';
 import { CadastroFilmesComponent } from './filmes/cadastro-filmes/cadastro-filmes.component';
 import { ListagemFilmesComponent } from './filmes/listagem-filmes/listagem-filmes.component';
+import { VisualizarFilmesComponent } from './filmes/visualizar-filme/visualizar-filme.component';
 
 const routes: Routes = [
-
   {
       path: '',
       redirectTo: 'filmes',
@@ -23,6 +23,10 @@ const routes: Routes = [
         path: 'cadastro',
         component: CadastroFilmesComponent,
         pathMatch: 'full'
+      },
+      {
+        path: ':id',
+        component: VisualizarFilmesComponent
       }
     ]
   },
