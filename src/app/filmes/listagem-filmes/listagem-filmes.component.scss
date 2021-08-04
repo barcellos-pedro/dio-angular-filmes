@@ -10,10 +10,19 @@
   }
 }
 
+.filtro-listagem {
+  width: calc(100% - 50px);
+}
+
 .mat-card-image {
   width: auto;
   margin: auto;
   display: block;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
 }
 
 @media screen and (min-width: 525px) {
