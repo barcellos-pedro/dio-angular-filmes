@@ -2,11 +2,9 @@
 
 <mat-card class="float-left margin10 filtro-listagem">
   <form autocomplete="off" novalidate [formGroup]="filtrosListagem">
-
     <div class="float-left width50">
       <dio-input-text titulo="Pesquise aqui" controlName="texto" [formGroup]="filtrosListagem"></dio-input-text>
     </div>
-
     <div class="float-left width50">
       <dio-input-select
         titulo="Gênero"
@@ -15,7 +13,6 @@
         [formGroup]="filtrosListagem">
       </dio-input-select>
     </div>
-    
   </form>
 </mat-card>
 
